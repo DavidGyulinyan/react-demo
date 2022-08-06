@@ -1,5 +1,7 @@
-export default function Surname(props) {
+import React from "react";
+
+export function Surname(props) {
     return (
-        <span>{props.surename}</span>
+        <span>{props.surname}</span>
     )
 };

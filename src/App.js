@@ -1,7 +1,8 @@
 import './App.css';
-import Name from "./Name";
-import Surname from "./Surname";
-import Age from "./Age";
+import {Name} from "./Name";
+import {Surname} from "./Surname";
+import {Age} from "./Age";
+import {Counter} from "./Counter";
 
 
 function User(props) {
@@ -15,10 +16,15 @@ function User(props) {
 };
 
 function App() {
+
+  
   return (
     <div className="App">
-      <header className="App-header">
+    <header className="App-header">
 
+
+    <Counter defaultValue={0}/>
+    
         <User
           name={"Elon"}
           surname={"Musk"}
