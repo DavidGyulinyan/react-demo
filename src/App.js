@@ -13,18 +13,15 @@ function User(props) {
       </h3>
     </div>
   )
-};
+}
 
 function App() {
-
-  
   return (
     <div className="App">
     <header className="App-header">
 
+    <Counter />
 
-    <Counter defaultValue={0}/>
-    
         <User
           name={"Elon"}
           surname={"Musk"}
