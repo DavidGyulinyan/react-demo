@@ -16,10 +16,6 @@ class Counter extends Component {
                 <p>
                     Counter value is {this.state.value}
                 </p>
-
-                <h3>
-                    {this.state.value}
-                </h3>
                 <p>{this.state.text}</p>
 
                 <button
@@ -45,6 +41,7 @@ class Counter extends Component {
                             value: this.state.value + 1,
                             text: "Counting",
                         });
+                        
                         if(this.state.value === -1) {
                             this.setState({
                                 text: "Counter is 0",

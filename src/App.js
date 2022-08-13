@@ -1,8 +1,10 @@
 import './App.css';
-import {Name} from "./Name";
-import {Surname} from "./Surname";
-import {Age} from "./Age";
+import { Name } from "./Name";
+import { Surname } from "./Surname";
+import { Age } from "./Age";
 import {Counter} from "./Counter";
+import { Product } from "./homework-6/Product";
+
 
 
 function User(props) {
@@ -18,9 +20,26 @@ function User(props) {
 function App() {
   return (
     <div className="App">
-    <header className="App-header">
+      <header className="App-header">
 
-    <Counter />
+        <div>
+          <Product
+            name="Bananas,"
+            price=" 2$,"
+            description=" Fresh bananas from Ecuador"
+          />
+        </div>
+
+
+        <div>
+          <Product
+            name="Apples,"
+            price=" 2$,"
+            description=" Fresh apples from Armenia"
+          />
+        </div>
+
+         <Counter />
 
         <User
           name={"Elon"}
@@ -38,7 +57,7 @@ function App() {
           name={"Sarah"}
           surname={"Doe"}
           age={21}
-        />
+        /> 
 
       </header>
     </div>
