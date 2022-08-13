@@ -2,7 +2,7 @@ import './App.css';
 import { Name } from "./Name";
 import { Surname } from "./Surname";
 import { Age } from "./Age";
-import {Counter} from "./Counter";
+import { Counter } from "./Counter";
 import { Product } from "./homework-6/Product";
 
 

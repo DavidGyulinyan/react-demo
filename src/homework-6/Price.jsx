@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 class Price extends Component {
     render () {
@@ -10,6 +10,6 @@ class Price extends Component {
         );
     }
 
-}
+} 
 
 export {Price};
