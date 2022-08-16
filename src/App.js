@@ -2,7 +2,7 @@ import './App.css';
 import { Name } from "./Name";
 import { Surname } from "./Surname";
 import { Age } from "./Age";
-import { Counter } from "./Counter";
+// import { Counter } from "./Counter";
 import { Product } from "./homework-6/Product";
 
 
@@ -17,6 +17,7 @@ function User(props) {
   )
 }
 
+
 function App() {
   return (
     <div className="App">
@@ -24,22 +25,29 @@ function App() {
 
         <div>
           <Product
-            name="Bananas,"
-            price=" 2$,"
-            description=" Fresh bananas from Ecuador"
-          />
-        </div>
-
-
-        <div>
-          <Product
-            name="Apples,"
-            price=" 2$,"
+            name="Apples"
+            price=" 1.2$"
             description=" Fresh apples from Armenia"
           />
+
+          <br />
+
+          <Product
+            name="Peaches"
+            price=" 1$"
+            description=" Fresh peaches from Armenia"
+          />
+
+          <br />
+
+          <Product
+            name="Prunes"
+            price=" 2$"
+            description=" Fresh prunes from Armenia"
+          />
         </div>
 
-         <Counter />
+        {/* <Counter />
 
         <User
           name={"Elon"}
@@ -57,7 +65,7 @@ function App() {
           name={"Sarah"}
           surname={"Doe"}
           age={21}
-        /> 
+        />  */}
 
       </header>
     </div>

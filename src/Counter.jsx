@@ -7,7 +7,7 @@ class Counter extends Component {
         this.state = {
             value: 0,
             text: "Counter"
-        };
+        }
     }
 
     render() {
@@ -17,6 +17,7 @@ class Counter extends Component {
                     Counter value is {this.state.value}
                 </p>
                 <p>{this.state.text}</p>
+            
 
                 <button
                     onClick={() => {
