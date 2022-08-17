@@ -4,6 +4,7 @@ import { Surname } from "./Surname";
 import { Age } from "./Age";
 // import { Counter } from "./Counter";
 import { Product } from "./homework-6/Product";
+import Input from "./input";
 
 
 
@@ -17,14 +18,68 @@ function User(props) {
   )
 }
 
+const fruits = [
+  {
+    name: "apples",
+    price: "2$",
+    desc: "apples from Armenia"
+  },
+  {
+    name: "bananas",
+    price: "1$",
+    desc: "bananas from Ecuador"
+  },
+  {
+    name: "oranges",
+    price: "1.5 $",
+    desc: "oranges from Spain"
+  },
+  {
+    name: "lemons",
+    price: "0.5$",
+    desc: "lemon from Greece"
+  },
+  {
+    name: "avocados",
+    price: "5$",
+    desc: "lemon from South Africa"
+  }
+];
 
 function App() {
+
+  const li = fruits.map((fruit, index) => {
+
+    return <li key={index}>
+      <Product
+        name={fruit.name}
+        price={fruit.price}
+        description={fruit.desc}
+      />
+    </li>
+  });
+
+
+  /* const li = [
+    <li key="a">{fruits[0]}</li>,
+    <li key="b">{fruits[1]}</li>,
+    <li key="c">{fruits[2]}</li>,
+    <li key="d">{fruits[3]}</li>
+  ];
+ */
+
   return (
     <div className="App">
       <header className="App-header">
 
+      <Input />
+
+        <ol>
+          {li}
+        </ol>
+
         <div>
-          <Product
+          { /*  <Product
             name="Apples"
             price=" 1.2$"
             description=" Fresh apples from Armenia"
@@ -45,6 +100,7 @@ function App() {
             price=" 2$"
             description=" Fresh prunes from Armenia"
           />
+         */}
         </div>
 
         {/* <Counter />
