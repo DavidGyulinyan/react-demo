@@ -1,14 +1,14 @@
 import './App.css';
-import { Name } from "./Name";
-import { Surname } from "./Surname";
-import { Age } from "./Age";
+// import { Name } from "./Name";
+// import { Surname } from "./Surname";
+// import { Age } from "./Age";
 // import { Counter } from "./Counter";
 import { Product } from "./homework-6/Product";
 import Input from "./input";
 
 
 
-function User(props) {
+/* function User(props) {
   return (
     <div>
       <h3>
@@ -16,7 +16,7 @@ function User(props) {
       </h3>
     </div>
   )
-}
+} */
 
 const fruits = [
   {
