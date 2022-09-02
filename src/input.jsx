@@ -6,9 +6,16 @@ export default class Imput extends Component {
     }
     handleChange = (event)=>{
         this.setState({
-            text: event.target.value
+            inputValue: event.target.value
         })
-    }
+    };
+
+handleClick= () => {
+    this.setState({
+        text: this.state.inputValue
+    })
+};
+
     render() {
         return (
             <div>
@@ -16,7 +23,11 @@ export default class Imput extends Component {
                 type="text"
                 onChange={this.handleChange}
                 />
-                <button>click me</button>
+                <button
+                onClick={this.handleClick}
+                >
+                click me
+                </button>
                 <h2>{this.state.text}</h2>
             </div>
         );
